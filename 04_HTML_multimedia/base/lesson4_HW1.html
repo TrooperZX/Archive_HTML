@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson3 homework1</title> <!-- Герасимов Виталий Викторович, Md-SC1-102-22-6 -->
+    <style type="text/css"> 
+    .iconRside {float:right; margin: 7px } 
+    .linkLft {border: none; width: 22px;height: 22px;padding: 9px 0;  background-color: #ffffff}
+    .linkMid {border: none; width: 22px;height: 22px; padding: 9px 44% ; text-align: center; background-color: #ffffff}
+    .linkRgt {border: none; width: 22px;height: 22px; padding: 9px 0;  float: right; background-color: #ffffff}
+    </style> 
+    <!-- Rside - used for logo at the top of the page, Lft,Mid and Rgt - used for navigation buttons in the end of the page 
+    (Don't ask me how i do it, i don't know it myself x_X) -пытаемся в комментирование -->
+</head>
+<body>
+    <pre class="iconRside" ><img src="pic/icon_python.png" alt="Icon Python" title="HOW-TO: Программа на Python"></pre>
+    <h1>HOW-TO: Программа на Python, Часть 1</h1> 
+   
+    <ul id="MainTOC">
+        <li>
+            <a href="../base/lesson3_HW1.html">Программа на Python — часть 1</a>
+        </li>
+        <li>
+            <a href="../base/lesson3_HW2.html">Программа на Python — часть 2</a>
+        </li>
+        <li>
+            <a href="../base/lesson3_HW3.html">Программа на Python — часть 3</a>
+        </li>
+    </ul>
+    <h2 id="TOC">Содержание</h2>
+    <h3>HOW-TO: Программа на Python, Часть 1</h3>
+    <ul>
+        <li><a href="#chapter1">Наша первая программа</a> </li>
+        <li><a href="#chapter2">Пример цикла For</a></li>
+    </ul>
+    <P>
+        Из множества существующих языков программирования Python — один из самых лёгких
+        в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.
+        Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не
+        обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим
+        создание консольных приложений, а в следующей — программирование графических
+        интерфейсов (<u>GUI</u>). Давайте создадим простую программу прямо сейчас.
+    </P>
+    <h2 id="chapter1">Наша первая программа</h2>
+    <A href="#TOC">К содержанию</A>
+    <p>
+        Наберём код в текстовом редакторе (например, в <b>gedit</b>). 
+        Потом мы разберёмся, что делает каждая строка и пойдём дальше.
+    </p>
+    <p>
+        Введите эти 4 строки: 
+    </p>
+    <p>
+        <code>#!/usr/bin/env python <br>
+        print 'Hello. I am a python program.' <br>
+        name = raw_input("What is your name?") <br>
+        print "Hello there, " + name + "!" <br>
+        </code>
+    </p>
+    <p>
+        Это всё. Сохраните файл как <b>hello.py</b> в любом месте. Я предлагаю сохранить его в папке
+        <b>python_examples</b> в домашнем каталоге. Этот пример показывает, как просто написать
+        программу на Python. Для запуска программы нужно сделать её файл исполняемым. Для
+        этого введите в терминале
+    </p>
+    <p>
+        <U>
+            <b>
+                <code>
+                    <var>chmod +x hello.py</var>
+                </code>
+            </b>
+        </U>
+    </p>
+    <p>
+        в папке, в которой вы сохранили программу. Теперь запустите её.
+    </p>
+    <p> <code>greg@earth:~/python_examples$ ./hello.py <br>
+        Hello. I am a python program. <br>
+        What is your name? Ferd Burphel <br>
+        Hello there, Ferd Burphel! <br>
+        greg@earth:~/python_examples$
+        </code>
+    </p>
+    <p><B>Вот и всё.</B></p>
+    <h2 id="chapter2">Пример цикла For</h2>
+    <A href="#TOC">К содержанию</A>
+    <p>
+        Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый
+        редактор и наберите следующую программу: 
+    </p>
+    <div>
+        <code>#!/usr/bin/env python <br>
+        for cntr in range(0,10): </code>
+    </div>
+        <div style="margin-left: 22pt;">
+            <code>print cntr </code>
+    </div><br>
+    <div><I>Не забудьте поставить символ табуляции перед строкой «print cntr».</I> Это важно. В
+        Python для указания на блоки кода используются не круглые «<B>(</B>» и фигурные «<B>{</B>» скобки
+        как в других языках программирования, а отступы.
+    </div>
+
+    <button class="linkLft">
+        <a href="">
+            <img src="pic/icon_left.svg" alt="Предыдущая страница" title="Предыдущая страница">
+        </a>
+    </button>
+    <button class="linkMid">
+        <a href="#MainTOC">
+            <img src="pic/icon_home.svg" alt="К оглавлению" title="К оглавлению">
+        </a>
+    </button>
+    <!-- так и не понял как кнопку расположить прямо по центру, пытался сделать ссылки через как список(Ul/li) и закинуть в них ссылки,
+         но не понял как разделить полученные ссылки по углам -->
+    <button class="linkRgt">
+        <a href="lesson4_HW2.html">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+            AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAC1lBMVEUAAABlZWUyadEyadAy
+            ac4yaM0yaMwyaMsyZ8k3ZbsyadEyadEyadAyatAya9Uyac4yaMsyaMszZsdlZWUyadEyadIybNc+
+            d+FGetw0a9MyZ8o3Zr5lZWUyadEyadIyaMs5Zrk+d+BIe9oyaMo4ZbhlZWUyadAyZsdlZWVlZWUy
+            ac0zbNU1bNI4ZbhlZWUyaMwyaMw/d91Getk0Z8RPYoUyaMwyaMwyZ8lBY6MyaMwyac4yaMxBZqky
+            atNCZqlDZqcyZ8tEZaMyZshGY5g3c+I2ZsBWYnk0bNM1a9E+Y6llZWUyaMozZcJlZWVlZWU1ZsAz
+            aMtOftY0Z8dGY5llZWU5ZbY0aMo0Z8ZJY5VlZWU5ZbcyZsc9cM9XhNc9cM80acpBcs00acpWi+9t
+            nveUsuqdt+d6pfNaj/Eyb+BikemsxvbZ4/Xv8/ry9fvx9fvg6Pe+0PJ1nuo4cdmGrO/S3vXk6/jl
+            7Pnd5vikwPTc5vja5Pagu+wyb96Dqe/R3fTX4vbJ2Pbm7vymwfPT3/XX4vXV4PWbt+w8c9hhkOe7
+            zvDI1/LJ1/Ld5vf////t8v2du/LE1PLD0/F0neiTs+24zO65zO/H1vL19/3p8Pydu/G0ye+2yu6b
+            tuVNheyju+mpwOumvuyzyO/4+v6Pse6Kq+delPdQi/g5evFhku2ateeOr+udvPS80fdsnvk7gP85
+            fvxrl+iKquXP3fjh6/9Vkf86f/1dj+1zm+ft8/xhmf88gf87f/1GhPZSjPWbvfzC2P9Kiv89gv88
+            f/w3evRDhf1Fhv1OjP5OjP9Mi/9Iif+jw/+70/9Chf9AhP9ChP82efVIiPxJiPxChP4+gv+Hsv/H
+            2v1QjfxGhvxNhetekvFfkvFdkfGQtPf3+v/K2vlomfFAddZtmOd0nOiowfHV4fd4oOl8oOKCpeaM
+            rOjW4feCpuZKetJzmeGMrOeNreh6nNuOreWRr+hm/0DYAAAAYnRSTlMAAAUaMz09NBwGOY+/3eje
+            wZI+AyOT7f399Lk9BB+21k39/tk8ApiiDQE57/BPBwWP/f2hFxq/zDUz3eVT7mBi5lvQQ/2qKu7y
+            ZRiZsCsLKr39ylQUK7/KUR0wofD98uXu5tEkhnwAAAABYktHRI0bDOLVAAAAB3RJTUUH5gMDEDYO
+            K16YAwAAAbRJREFUGNNjYIAAJmYWVjZ2Dk5GBmTAxc3Dy8fHLyAoJIyQEBEVE09KTklNS5eQlJKW
+            gUrIymVkZmXn5Obm5RcUFskryEDUyikWl5SWlVdUVJaVVVUrKauogtSr1dTW1dfXNzQ2NjXXt7S2
+            tatraDIwaGl3dHZ1d3X19Pb29U/o6po4SUdXj0HfwHDylKlAMG16b++MmbOmzp5jZGzCYGo2d978
+            BSCwcBFQfPGSpcuWm1swWFqtWLlqNRis6QWas3bduvXWNgxsfBs2bupFgM1b1m21tQMKb9u+A0m4
+            d+eu3bb2DOz8e/buQxLdf+DgIQdHBg6Bw0eOHjt2/PiJk6eAoqfPnD133smZgVPQ5cJFILh0+QpQ
+            9Oq16xcuuLi6MTAKud+4eevWrdt37vb23rt/69bNGx6eXgwMwt4PHj6a9OjR497eJ08nTXr08IGP
+            rx8DA6N/QOCz58+fv3j58sWrV8+fBQYFh6gCg0o1NOz1m7fvwODtm9fhEZHgEGcUjoqOiX3/4ePH
+            D+9j43yCI/Wg8aCqoWtsHp+QkOjk6ukbAosdBkZNPRMLGzt7R2c3Lz9wHAAACvnKNn1jYzsAAAAl
+            dEVYdGRhdGU6Y3JlYXRlADIwMjItMDMtMDNUMTY6NTQ6MTQrMDA6MDDV4Ys3AAAAJXRFWHRkYXRl
+            Om1vZGlmeQAyMDIyLTAzLTAzVDE2OjU0OjE0KzAwOjAwpLwziwAAAABJRU5ErkJggg==" alt="Следующая страница" title="Следующая страница"> <!--картинка в виде векторной графики -->
+        </a>
+    </button>
+</body>
+</html>
