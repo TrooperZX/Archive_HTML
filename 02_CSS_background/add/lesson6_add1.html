@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border add HW1</title><!-- Герасимов Виталий Викторович, Md-SC1-102-22-6 -->
+    <style>
+        .border1 {padding: 2em; background-image:url(img/b-r.gif), url(img/t-r.gif), url(img/t-l.gif), url(img/b-l.gif), url(img/t.gif), url(img/b.gif), url(img/r.gif), url(img/l.gif);
+            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-x, repeat-x, repeat-y, repeat-y; background-position: bottom right, top right, top left, bottom left, top, bottom, right, left;}
+        .border2{border-style:solid; border-width: 0.6em;  width:99%;
+    			border-image-source: url('img/border.png') ;
+    			border-image-slice: 300;
+    			border-image-repeat: stretch; 
+    			border-image-width: 100;}
+        .border3{background: 
+  			url(img/t-l.gif) no-repeat top left,
+  			url(img/t-r.gif) no-repeat top right,
+  			url(img/b-l.gif) no-repeat bottom left,
+  			url(img/b-r.gif) no-repeat bottom right,
+  			url(img/l.gif) repeat-y left,  
+  			url(img/t.gif) repeat-x top, 
+  			url(img/r.gif) repeat-y right, 
+  			url(img/b.gif) repeat-x bottom;
+  					 padding:2.5em}
+    </style>
+</head>
+<body>
+    <div class="border1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita possimus amet eum ducimus reiciendis impedit corporis eveniet? Qui accusamus error, nulla voluptatum reprehenderit deserunt minus dolore placeat cum vero architecto.
+
+    </div>
+    <hr>
+    <div class="border3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At ex magnam expedita quaerat, delectus cum error nisi blanditiis totam incidunt autem non sint natus ab amet, aliquid, aperiam architecto minima?
+    </div>
+    <hr>
+    <div style=" background: url(img/l.gif)repeat-y left;">
+        <div style="background: url(img/t.gif) repeat-x top">
+            <div style="background: url(img/r.gif) repeat-y right">
+                <div style="background: url(img/b.gif) repeat-x bottom">
+                    <div style="background: url(img/t-l.gif) no-repeat top left">
+                        <div style="background: url(img/t-r.gif) no-repeat top right">
+                            <div style="background: url(img/b-l.gif) no-repeat bottom left">
+                                <div style="background: url(img/b-r.gif) no-repeat bottom right">
+                                    <div style=" padding:2.5em">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio placeat ratione beatae cum asperiores reprehenderit, reiciendis magnam eum eos amet dolorem iure quod quis, labore voluptatibus? Similique sequi maxime reprehenderit?
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="border2"> <!--не было общей рамки, взял с интеренета-->
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo nam ea facere similique assumenda culpa dolor earum id odit est commodi aliquam vel inventore incidunt, iure nisi deleniti libero sed?
+    </div>    
+</body>
+</html>
