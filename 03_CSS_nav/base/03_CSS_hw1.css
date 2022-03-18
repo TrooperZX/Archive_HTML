@@ -1,0 +1,147 @@
+
+body { 
+    font-family: helvetica, arial, serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  /*wrap for mainmenu*/ 
+  .wrap {
+    display: inline-block;
+    margin-top: 50px;
+  }
+  
+/*main menu only*/
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+  }
+  
+  ul {
+    list-style: none;
+    position: relative;
+    text-align: left;
+  }
+  
+  li {
+    float: left;
+  }
+  ul:after {
+    clear: both;
+  }
+  ul:before,
+  ul:after {
+      content: " ";
+      display: table;
+  }
+  /*main menu*/
+  nav {
+    position: relative;
+    background-color: gray;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #0E0E0E;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  /*border between main menu elements*/
+  ul.primary li a {
+    display: block;
+    padding: 20px 30px;
+    border-right: 1px solid #3D3D3D;
+  }
+  /*remove border on last mainmenu element*/
+  ul.primary li:last-child a {
+    border-right: none;
+  }
+  
+
+  /* sub_menu */
+  ul.sub {
+    position: absolute;
+    z-index: 2;
+    box-shadow: 2px 2px 0 #bdbdbd;
+    border-bottom-right-radius: 15px;
+    width: 35%;
+    display:none;
+  }
+  
+  ul.sub li {
+    float: none;
+    margin: 0;
+  }
+  /*borders between submenu*/
+  ul.sub li a {
+    border-bottom: 2px dotted rgb(160, 160, 160);
+    border-right: none;
+    color: #000;
+    padding: 15px 30px;
+  }
+  /*remove border on last submenu element*/
+  ul.sub li:last-child a {
+    border-bottom: none;
+  }
+  /*highlight hover elements*/
+  ul.sub li a:hover {
+    color: #000;
+    background: #eeeeee;
+  }
+  /* sub display*/
+  ul.primary li:hover ul {
+    display: block;
+    background: rgb(155, 28, 28);
+  }
+  /* keeps the tab background white */
+  ul.primary li:hover a {
+    background: #fff;
+    color: #666;
+    text-shadow: 1px;
+  }
+   /*highlight hover elements*/
+  ul.primary li:hover > a{
+    color: #000;
+} 
+  /*for small screens(less 600px resolution)*/
+  @media only screen and (max-width: 860px) {
+    /*wrap for main menu*/    
+.wrap {
+    width: 40%;
+    margin-top: 0px;
+    margin-left: -200px;
+    height: auto;
+    }
+    
+    li {
+    float: none;
+    }
+    /*for hover elements manu menu + relative sub menu*/
+    ul.primary li:hover a {
+    background: none;
+    color: #fff7f7;
+    text-shadow: 1px 1px #000;
+    } 
+    /*sub menu */
+    ul.sub {
+    display: none;  
+    position: absolute;
+    margin-left: 70%;
+    margin-top: -28%;
+    box-shadow: none;
+    width: 50%;
+    border: #3D3D3D;
+    background-color: #000;
+    }
+    /*sub display*/
+    ul.sub li a {
+    background: #ffffff;
+    border: none;
+    color: #8B8B8B;
+    border-bottom: dotted rgb(119, 119, 119);
+    }
+  /*highlight hover elements submenu*/  
+    ul.sub li a:hover {
+    color: #ccc;
+    background: none;
+    }
+  }

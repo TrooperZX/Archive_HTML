@@ -1,0 +1,33 @@
+table{
+    border-collapse: collapse;
+    border: 1px solid;
+    border-color: white;
+    
+}    
+td{
+    border: 1px;
+    border-style: dotted;
+    border-color: gray;
+}
+table tr:first-child{
+    text-align: center;
+    background-color: dimgray;
+    font-weight: bold;
+}
+table tr:first-child td{
+    border: solid white;
+}
+table tr:last-child td{
+    text-align: center;
+    border: none;
+    background-color: white;
+}
+table tr:hover {
+    background-color: aqua;
+}
+tr:nth-child(2n+1){
+    background-color: lightgray;
+}
+tr td:first-child{
+    font-weight: bold;
+}

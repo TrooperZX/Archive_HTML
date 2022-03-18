@@ -1,0 +1,17 @@
+div{
+    border: 1px; 
+    border-color: gray;
+    padding: 10px;
+    border-style: solid;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+ul{
+    list-style-image: url(pic/doc_pic.jpg);
+}
+li a img {
+visibility: hidden;
+}
+a:hover img {
+    visibility: visible;
+}
